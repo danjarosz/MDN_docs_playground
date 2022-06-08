@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Hyperlinks</title>
+  </head>
+  <body>
+    <h1>Hyperlinks</h1>
+    <h2>Text as a link</h2>
+    <p>
+      I'm creating a link to
+      <a
+        href="https://www.mozilla.org/en-US"
+        title="The best place to find more information about Mozilla's
+          mission and how to contribute"
+        >the Mozilla homepage</a
+      >
+    </p>
+    <h2>Block element as a link</h2>
+    <a
+      href="https://www.mozilla.org/en-US"
+      title="The best place to find more information about Mozilla's
+          mission and how to contribute"
+    >
+      <img
+        src="https://cdn.pixabay.com/photo/2014/04/02/10/16/firefox-303322_1280.png"
+        alt="mozilla logo that links to the Mozilla homepage"
+        width="300px"
+      />
+    </a>
+    <h2>Link to download resources</h2>
+    <a
+      href="https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=en-US"
+      download="firefox-latest-64bit-installer.exe"
+    >
+      Download Latest Firefox for Windows (64-bit) (English, US)
+    </a>
+    <p>
+      It is recommented to use an attribute
+      <code>download="description"</code> for download links
+    </p>
+
+    <h2>Link to mail</h2>
+    <a href="mailto:nowhere@mozilla.org">Send email to nowhere</a>
+    <p>
+      You need to use this structure to create a link to email
+      <code>href="mailto:nowhere@mozilla.org"</code>
+    </p>
+    <p>You can also provide some additional data into email link, like this:</p>
+    <a
+      href="mailto:nowhere@mozilla.org?cc=name2@rapidtables.com&bcc=name3@rapidtables.com&subject=The%20subject%20of%20the%20email&body=The%20body%20of%20the%20email"
+    >
+      Send mail with cc, bcc, subject and body
+    </a>
+    <p>and all values must be URL-encoded with non-printing characters</p>
+
+    <h2>References</h2>
+    <p>You can create links to:</p>
+    <ul>
+      <li>extranal pages, like https://www.google.com</li>
+      <li>other html documents</li>
+      <li>pdf or any other files (audio, video) files</li>
+      <li>streamed (audio, video)</li>
+      <li>specific parts of the document (using #)</li>
+      <li>e-mails</li>
+    </ul>
+  </body>
+</html>
