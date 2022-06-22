@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Video and audio</title>
+  </head>
+  <body>
+    <h1>Video and audio</h1>
+    <h2>Video</h2>
+    <video controls>
+      <source src="./assets/rabbit320.mp4" type="video/mp4" />
+      <source src="./assets/rabbit320.webm" type="video/webm" />
+      <p>
+        Your browser doesn't support HTML5 video. Here is a
+        <a href="./assets/rabbit320.webm">link to the video</a> ionstead
+      </p>
+    </video>
+    <h2>Video - more attributes</h2>
+    <video
+      controls
+      width="400"
+      height="400"
+      autoplay
+      loop
+      muted
+      preload="auto"
+      poster="./assets/poster.png"
+    >
+      <source src="./assets/rabbit320.mp4" type="video/mp4" />
+      <source src="./assets/rabbit320.webm" type="video/webm" />
+      <p>
+        Your browser doesn't support HTML5 video. Here is a
+        <a href="./assets/rabbit320.webm">link to the video</a> ionstead
+      </p>
+    </video>
+
+    <h2>Audio</h2>
+    <audio controls>
+      <source src="./assets/viper.mp3" type="audio/mp3" />
+      <source src="./assets/viper.ogg" type="audio/ogg" />
+      <p>
+        Your browser doesn't support HTML5 audio. Here is a
+        <a href="./assets/viper.mp3">link to the audio</a> instead.
+      </p>
+    </audio>
+
+    <h2>Audio - all features</h2>
+    <audio controls autoplay loop muted preload="auto">
+      <source src="./assets/viper.mp3" type="audio/mp3" />
+      <source src="./assets/viper.ogg" type="audio/ogg" />
+      <p>
+        Your browser doesn't support HTML5 audio. Here is a
+        <a href="./assets/viper.mp3">link to the audio</a> instead.
+      </p>
+    </audio>
+
+  <h2>Subtitles, captions, or descriptions in the video</h2>
+    <video controls>
+      <source src="./assets/rabbit320.mp4" type="video/mp4" />
+      <source src="./assets/rabbit320.webm" type="video/webm" />
+      <track kind="subtitles" src="./assets/rabbit-subtitles.vtt" srclang="en" label="English">
+      <p>
+        Your browser doesn't support HTML5 video. Here is a
+        <a href="./assets/rabbit320.webm">link to the video</a> instead
+      </p>
+    </video>
+  </body>
+</html>
