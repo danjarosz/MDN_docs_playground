@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vector Graphics</title>
+  </head>
+  <body>
+    <h1>Vector Graphics</h1>
+    <h2>Using img tag</h2>
+    <img
+      src="./img.svg"
+      alt="Black rectangle with a blue circle in the middle of the picture"
+    />
+    <h2>SVG directly inside the HTML code</h2>
+    <svg
+      version="1.1"
+      baseProfile="full"
+      width="300"
+      height="200"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect width="100%" height="100%" fill="black" />
+      <circle cx="150" cy="100" r="90" fill="blue" />
+    </svg>
+    <h2>embed SVG</h2>
+    <iframe src="./img.svg" width="500" height="500" sandbox>
+      <img src="./img.svg" alt="Triangle with three unequal sides" />
+    </iframe>
+
+    <h2>More complex example</h2>
+    <svg width="100%" height="100%">
+      <rect width="100%" height="100%" fill="red" />
+      <circle cx="100%" cy="100%" r="150" fill="blue" stroke="black" />
+      <polygon points="120,0 240,225 0,225" fill="green" />
+      <text
+        x="50"
+        y="100"
+        font-family="Verdana"
+        font-size="55"
+        fill="white"
+        stroke="black"
+        stroke-width="2"
+      >
+        Hello!
+      </text>
+    </svg>
+  </body>
+</html>
